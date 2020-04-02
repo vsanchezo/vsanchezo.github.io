@@ -19,14 +19,14 @@
     <!-- Navigation bar -->
     <nav class="navbar is-link is-fixed-top">
         <div class="navbar-brand">
-        <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+        <div class="navbar-burger burger" data-target="navMenu">
             <span></span>
             <span></span>
             <span></span>
         </div>
         </div>
 
-    <div id="navbarExampleTransparentExample" class="navbar-menu">
+    <div id="navMenu" class="navbar-menu">
         <div class="navbar-end">
             <a href="#home" class="navbar-item">
                 <span class="icon">
@@ -723,6 +723,19 @@
         </p>
         </div>
     </footer>
+
+    <script type="text/javascript">
+        (    function(){
+                var burguer = document.querySelector('.burger');
+                var nav = document.querySelector('#'+burguer.dataset.target);
+    
+                burguer.addEventListener('click', function() {
+                    burguer.classList.toggle('is-active');
+                    nav.classList.toggle('is-active');
+                });
+            }
+        )(); 
+    </script>
 </body>
 
 </html>
