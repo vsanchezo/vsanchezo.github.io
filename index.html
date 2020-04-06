@@ -8,16 +8,32 @@
     <title>Portfolio - Vladimir Sanchez</title>
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">  
     <!-- Bulma Version 0.8.x-->
-    <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" /> -->
     <!-- <script async type="text/javascript" src="../js/bulma.js"></script> -->
+    <link rel="stylesheet" href="bulma/css/bulma.css">
     <script src="https://kit.fontawesome.com/1adeba556f.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+
+    <!-- text animations -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- animacion de scroll -->
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script> -->
 </head>
 
 <body>
     <!-- Navigation bar -->
-    <nav class="navbar is-link is-fixed-top">
+    <!-- <a class="navbar is-link is-fixed-top"> -->
+    <nav class="navbar is-dark is-fixed-top">
         <div class="navbar-brand">
         <div class="navbar-burger burger" data-target="navMenu">
             <span></span>
@@ -27,14 +43,16 @@
         </div>
 
     <div id="navMenu" class="navbar-menu">
+
         <div class="navbar-end">
-            <a href="#home" class="navbar-item">
+            <a href="#home" class="navbar-item button is-info is-outlined">
                 <span class="icon">
                     <i class="fas fa-house-user"></i>
                 </span>
                 <span>Home</span>
             </a>
-            <a class="navbar-item" href="#about">
+
+            <a class="navbar-item button is-info is-outlined" href="#about">
                 <span class="icon">
                     <i class="fas fa-info"></i>
                 </span>
@@ -46,222 +64,83 @@
             </span>
             <span>Habilities</span>
             </a> -->
-            <a class="navbar-item" href="#resume">
-            <span class="icon">
-                <i class="fas fa-file-alt"></i>
-            </span>
-            <span>Resume</span>
+            
+            <a class="navbar-item button is-info is-outlined" href="#portfolio">
+                <span class="icon">
+                    <i class="fas fa-th-list"></i>
+                </span>
+                <span>Portfolio</span>
             </a>
-            <a class="navbar-item" href="#portfolio">
-            <span class="icon">
-                <i class="fas fa-th-list"></i>
-            </span>
-            <span>Portfolio</span>
+
+            <a class="navbar-item button is-info is-outlined" href="#contact">
+                <span class="icon">
+                    <i class="fas fa-envelope"></i>
+                </span>
+                <span>Contact</span>
             </a>
-            <a class="navbar-item" href="#contact">
-            <span class="icon">
-                <i class="fas fa-envelope"></i>
-            </span>
-            <span>Contact</span>
+
+            <a class="navbar-item button is-info is-rounded" href="./CV.pdf" >
+                <span class="icon">
+                    <i class="fas fa-file-alt"></i>
+                </span>
+                <span>Download Resume</span>
             </a>
         </div>
         </div>
+
     </nav>
 
     <!-- Header -->
-    <section class="hero is-link is-fullheight is-fullheight-with-navbar" id="home">
+    <!-- <section class="hero is-link is-fullheight is-fullheight-with-navbar" id="home"> -->
+    <section class="hero is-dark is-fullheight is-fullheight-with-navbar" id="home">
         <div class="hero-body">
-        <div class="container">Hello! I am
-            <h1 class="title is-1">
-            Vladimir Sánchez Ocampo
-            </h1>
-            <h2 class="subtitle is-3">
-            Mechatronic Engineer and Web Developer
-            </h2>
+            <div class="container">Hello! I am
+                <h1 class="title is-1">Vladimir Sánchez Ocampo</h1>
+                <h2 class="subtitle is-3">Frontend Developer and independent consultant</h2>
+                <h6 class="subtitle is-6">
+                    and I can help you to solve 
+                    <div class="slidingVertical">
+                        <span>all </span>
+                        <span>some of </span>
+                        <span>one of</span>
+                    </div> 
+                    <br />your problems.
+                </h6>
+                
+                <p class="buttons">
+                    <button class="button" onclick="window.location.href = 'https://github.com/vsanchezo/repositories';">
+                        <span class="icon">
+                            <i class="fab fa-github"></i>
+                        </span>
+                        <span>GitHub</span>
+                    </button>
+                    <button class="button is-link" onclick="window.location.href = 'https://linkedin.com/in/vsanchezo';">
+                        <span class="icon">
+                            <i class="fab fa-linkedin"></i>
+                        </span>
+                        <span>LinkedIn</span>
+                    </button>
+                    <button class="button is-danger" onclick="window.location.href = './CV.pdf';">
+                        <span class="icon">
+                            <i class="fas fa-file-alt"></i>
+                        </span>
+                        <span>Get CV</span>
+                    </button>
+                </p>
+            </div>
         </div>
+
+        <div class="hero-foot">
+            <p class="subtitle is-6 has-text-centered">
+                Is your problem about electronics, mechanical design or some mechatronic stuff?  
+                <a href="mechatronics.html">Click here!</a>.
+                <br />
+                <br />
+            </p>
         </div>
     </section>
 
-    <!-- About -->
-    <section class="section" id="about">
-    <!-- Title -->
-        <div class="section-heading">
-        <h3 class="title is-2">About Me</h3>
-        <h4 class="subtitle is-5">Mechatronic engineer and software developer</h4>
-        <div class="container">
-            <p>Professional engineer with 3+ years of experience in textil, automotive and plastics industies. An adaptable professional specialized in mechanical design usign multiple software (AutoCAD, SolidWorks, Catia v5), electronic design and embedded systems, maintenance, project management and software development.</p>
-            <br>
-        </div>
-    </div>
-
-    <div class="section">
-        <h3 class="title is-4">Info</h3>
-
-        <div class="columns is-3">
-
-            <div class="column has-text-white-ter">
-                <p class="notification is-link">
-                    <span class="icon">
-                        <i class="fas fa-house-user"></i>
-                    </span>
-                    <span>Metepec, México</span>
-                </p>
-            </div>
-            <div class="column has-text-white-ter">
-                <p class="notification is-link">
-                    <span class="icon">
-                        <i class="fas fa-mobile-alt"></i>
-                    </span>
-                    <span>(+52) 722-234-3668</span>
-                </p>
-                
-            </div>
-            <div class="column has-text-white-ter">
-                <p class="notification is-link">
-                    <span class="icon">
-                        <i class="fas fa-at"></i>
-                    </span>
-                    <span>vsanchezo@protonmail.com</span>
-                </p>
-                
-            </div>
-            <div class="column has-text-white-ter">
-                <p class="notification is-link">
-                    <span class="icon">
-                        <i class="fas fa-globe-americas"></i>
-                    </span>
-                    <span>
-                            <a href="https://github.com/vsanchezo?tab=repositories" >Github</a> | 
-                            <a href="https://www.linkedin.com/in/vsanchezo/" >LinkedIn</a>
-                    </span>
-                    
-                </p>
-                
-            </div>
-        </div>
-    </div>
-
     
-
-    <div class="columns has-same-height is-gapless">
-            
-        <div class="column">
-            <div class="card">
-                <div class="card-content skills-content">
-                    <h3 class="title is-4">Developer Skills</h3>
-                    <div class="content">
-    
-                    <article class="media">
-                        <div class="media-content">
-                        <div class="content">
-                            <p>
-                            <strong>Web:</strong> HTML5, CSS, JavaScript.<br>
-                            <strong>CSS Frameworks:</strong> Bootstrap, bulma, Ulkit, Semantic UI, materialize.<br>
-                            <strong>JS frameworks:</strong> React, Vue.js, electron.js<br>
-                            <!-- <progress class="progress is-primary" value="90" max="100"></progress> -->
-                            </p>
-                        </div>
-                        </div>
-                    </article>
-
-                    <article class="media">
-                        <div class="media-content">
-                        <div class="content">
-                            <p>
-                            <strong>Other languages:</strong> C/C++, Java, Python, SQL<br>
-                            <!-- <progress class="progress is-primary" value="90" max="100"></progress> -->
-                            </p>
-                        </div>
-                        </div>
-                    </article>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="column">
-            <!-- Skills -->
-            <div class="card">
-            <div class="card-content skills-content">
-                <h3 class="title is-4">Mechatronic Skills</h3>
-                <div class="content">
-
-                <article class="media">
-                    <div class="media-content">
-                    <div class="content">
-                        <p>
-                        <strong>Mechanical design:</strong> AutoCAD 2D & 3D, SolidWorks, Catia V5.<br>
-                        <!-- <progress class="progress is-primary" value="90" max="100"></progress> -->
-                        </p>
-                    </div>
-                    </div>
-                </article>
-
-                <article class="media">
-                    <div class="media-content">
-                    <div class="content">
-                        <p>
-                        <strong>Electronic design:</strong> Circuit design, schematics and Printed Circuit Boards (PCB).<br>
-                        <strong>Microcontrollers:</strong> Atmel, PIC and STM32.<br>
-                        <strong>Programming:</strong> C/C++<br>
-                        <!-- <progress class="progress is-primary" value="75" max="100"></progress> -->
-                        </p>
-                    </div>
-                    </div>
-                </article>
-
-                <article class="media">
-                    <div class="media-content">
-                    <div class="content">
-                        <p>
-                        <strong>Maintenance: </strong> preventive and corrective maintenance. Hydraulic, pneumatic and electrical interpretation of schematics.
-                        <br>
-                        <!-- <progress class="progress is-primary" value="95" max="100"></progress> -->
-                        </p>
-                    </div>
-                    </div>
-                </article>
-
-                </div>
-            </div>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="card">
-                <div class="card-content skills-content">
-                    <h3 class="title is-4">Other Skills</h3>
-                    <div class="content">
-    
-                        <article class="media">
-                            <div class="media-content">
-                            <div class="content">
-                                <p>
-                                <strong>Project management:</strong> Planification, coordination of multiple departaments and teams, project tracking, time studies, line balancing, audits, reports, analysis, documentation, value streams.
-                                <br>
-                                <!-- <progress class="progress is-primary" value="66" max="100"></progress> -->
-                                </p>
-                            </div>
-                            </div>
-                        </article>
-
-                    <article class="media">
-                        <div class="media-content">
-                        <div class="content">
-                            <p>
-                            <strong>Soft skills: </strong> Communication, problem solving, adaptability, responsability, social intelligence.<br>
-                            <!-- <progress class="progress is-primary" value="90" max="100"></progress> -->
-                            </p>
-                        </div>
-                        </div>
-                    </article>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        </div>
-    </section>
 
 <!-- Skills tags -->
 <!-- <br>
@@ -326,271 +205,225 @@
     </section> -->
 
 <!-- Resume -->
-    <section class="section" id="resume">
-        <div class="section-heading">
-        <h3 class="title is-2">Resume</h3>
-        <h4 class="subtitle is-5">More about my past</h4>
-        <a href="./CV.pdf" class="button is-link is-medium">
-            <span class="icon">
-            <i class="fas fa-file-alt"></i>
-            </span>
-            <span>Download My Resume</span>
-        </a>
+    <!-- <section class="section" id="resume">
+        <div class="comtainer">
+            <div class="section-heading">
+            <h3 class="title is-2">Resume</h3>
+            <h4 class="subtitle is-5">More about my past</h4>
+            <a href="./CV.pdf" class="button is-danger is-medium">
+                <span class="icon">
+                <i class="fas fa-file-alt"></i>
+                </span>
+                <span>Download My Resume</span>
+            </a>
+            </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Portfolio -->
     <section class="section" id="portfolio">
         <div class="container">
-        <div class="section-heading">
-            <h3 class="title is-2">Portfolio</h3>
-            <h4 class="subtitle is-5">My latest works</h4>
-            <h4 class="subtitle is-6">Incomplete list... some of my projects are still in development and/or in my dead laptop's hard drive.</h4>
-        </div>
-        <br>
+            <div class="section-heading">
+                <h3 class="title is-2">Portfolio</h3>
+                <h4 class="subtitle is-5">My latest works</h4>
+            </div>
+            <br>
 
-        <div class="container portfolio-container">
-            <div class="columns">
-            <div class="column is-4">
-                <!-- admin -->
-                <div class="card">
-                <header class="card-header">
-                    <p class="card-header-title">
-                    <span>Prototipo X <small>(Light)</small></span>
-                    <span class="is-pulled-right">
-                        <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
-                        <span class="tag is-default">v0.5.1</span>
-                        </a>
-                        <span class="tag is-default">Desktop</span>
-                        <span class="tag is-danger">Responsive</span>
-                    </span>
-                    </p>
-                </header>
-                <div class="card-content">
-                    <figure class="image">
-                    <img src="./img/px.png" alt="Admin template screenshot">
-                    </figure>
-                </div>
-                <footer class="card-footer">
-                    <!-- <a href="templates/admin.html" class="card-footer-item">Preview</a> -->
-                    <a href="https://github.com/vsanchezo/prototipo-x" class="card-footer-item">Source
-                    Code</a>
-                </footer>
-                </div>
-                <!-- cards -->
-                <div class="card">
-                <header class="card-header">
-                    <p class="card-header-title">
-                    <span>Chat app</span>
-                    <span class="is-pulled-right">
-                        <span class="tag is-default">v0.7</span>
-                        <span class="tag is-default">Desktop</span>
-                        <span class="tag is-danger">Mobile</span>
-                    </span>
-                    </p>
-                </header>
-                <div class="card-content">
-                    <figure class="image">
-                    <img src="./img/chat.png" alt="Chat app screenshot">
-                    </figure>
-                </div>
-                <footer class="card-footer">
-                    <a href="https://5e7ace18c0fd56e25ff16a25--vladeex-chat.netlify.com/" class="card-footer-item">Preview</a>
-                    <a href="https://github.com/vsanchezo/chat-app" class="card-footer-item">Source
-                    Code</a>
-                </footer>
+            <div class="container portfolio-container">
+                <div class="columns">
+                    <div class="column auto">
+                        <!-- Prototipo X -->
+                        <div class="card">
+                            <header class="card-header">
+                                <p class="card-header-title">
+                                <span>Prototipo X <small>(Light)</small></span>
+                                <span class="is-pulled-right">
+                                    <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
+                                    <span class="tag is-default">v0.5.1</span>
+                                    </a>
+                                    <span class="tag is-default">Desktop</span>
+                                    <span class="tag is-danger">Responsive</span>
+                                </span>
+                                </p>
+                            </header>
+                            <div class="card-content">
+                                <figure class="image">
+                                <img src="./img/px.png" alt="Admin template screenshot">
+                                </figure>
+                            </div>
+                            <footer class="card-footer">
+                                <!-- <a href="templates/admin.html" class="card-footer-item">Preview</a> -->
+                                <a href="https://github.com/vsanchezo/prototipo-x" class="card-footer-item">Source
+                                Code</a>
+                            </footer>
+                        </div>
+
+                        <!-- Prototipo Z -->
+                        <div class="card">
+                            <header class="card-header">
+                                <p class="card-header-title">
+                                <span>Prototipo Z</span>
+                                <span class="is-pulled-right">
+                                    <span class="tag is-default">v2.0</span>
+                                    <span class="tag is-default">Desktop</span>
+                                    <span class="tag is-danger">Responsive</span>
+                                </span>
+                                </p>
+                            </header>
+                            <div class="card-content">
+                                <figure class="image">
+                                <img src="./img/pz.png" alt="Prototipo Z screenshot">
+                                </figure>
+                            </div>
+                            <footer class="card-footer">
+                                <a href="https://github.com/vsanchezo/prototipo-z" class="card-footer-item">Source
+                                Code</a>
+                            </footer>
+                        </div>
+                    </div>
+
+
+                    <div class="column auto">
+                        <!-- Prototipo Y -->
+                        <div class="card">
+                            <header class="card-header">
+                                <p class="card-header-title">
+                                <span>Prototipo Y</span>
+                                <span class="is-pulled-right">
+                                    <span class="tag is-default">v1.0</span>
+                                    <span class="tag is-default">Desktop</span>
+                                    <!-- <span class="tag is-danger">Responsive</span> -->
+                                </span>
+                                </p>
+                            </header>
+                            <div class="card-content">
+                                <figure class="image">
+                                <img src="./img/py.png" alt="Prototipo Y screenshot">
+                                </figure>
+                            </div>
+                            <footer class="card-footer">
+                                <!-- <a href="templates/band.html" class="card-footer-item">Preview</a> -->
+                                <a href="https://github.com/vsanchezo/prototipo-y" class="card-footer-item">Source
+                                Code</a>
+                            </footer>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-
-            <div class="column is-4">
-                <!-- Prototipo Y -->
-                <div class="card">
-                <header class="card-header">
-                    <p class="card-header-title">
-                    <span>Prototipo Y</span>
-                    <span class="is-pulled-right">
-                        <span class="tag is-default">v1.0</span>
-                        <span class="tag is-default">Desktop</span>
-                        <!-- <span class="tag is-danger">Responsive</span> -->
-                    </span>
-                    </p>
-                </header>
-                <div class="card-content">
-                    <figure class="image">
-                    <img src="./img/py.png" alt="Prototipo Y screenshot">
-                    </figure>
-                </div>
-                <footer class="card-footer">
-                    <!-- <a href="templates/band.html" class="card-footer-item">Preview</a> -->
-                    <a href="https://github.com/vsanchezo/prototipo-y" class="card-footer-item">Source
-                    Code</a>
-                </footer>
-                </div>
-                <!-- cheatsheet -->
-                <div class="card">
-                <header class="card-header">
-                    <p class="card-header-title">
-                    <span>Cheatsheet</span>
-                    <span class="is-pulled-right">
-                        <span class="tag is-default">v0.0.2</span>
-                        <span class="tag is-default">Desktop</span>
-                    </span>
-                    </p>
-                </header>
-                <div class="card-content">
-                    <figure class="image">
-                    <img src="img/electron.png" alt="Electron screenshot">
-                    </figure>
-                </div>
-                <footer class="card-footer">
-                    <a href="https://github.com/vsanchezo/python-electron" class="card-footer-item">Source
-                    Code</a>
-                </footer>
-                </div>
-            </div>
-
-
-            <div class="column is-4">    
-                <!-- blog -->
-                <div class="card">
-                <header class="card-header">
-                    <p class="card-header-title">
-                    <span>Prototipo Z</span>
-                    <span class="is-pulled-right">
-                        <span class="tag is-default">v2.0</span>
-                        <span class="tag is-default">Desktop</span>
-                        <span class="tag is-danger">Responsive</span>
-                    </span>
-                    </p>
-                </header>
-                <div class="card-content">
-                    <figure class="image">
-                    <img src="./img/pz.png" alt="Prototipo Z screenshot">
-                    </figure>
-                </div>
-                <footer class="card-footer">
-                    <a href="https://github.com/vsanchezo/prototipo-z" class="card-footer-item">Source
-                    Code</a>
-                </footer>
-                </div>
-
-                <!-- cover -->
-                <div class="card">
-                <header class="card-header">
-                    <p class="card-header-title">
-                    <span>PDF generator</span>
-                    <span class="is-pulled-right">
-                        <span class="tag is-default">Desktop</span>
-                        <span class="tag is-default">Mobile</span>
-                    </span>
-                    </p>
-                </header>
-                <div class="card-content">
-                    <figure class="image">
-                    <img src="./img/pdf.jpg" alt="PDF generator screenshot">
-                    </figure>
-                </div>
-                <footer class="card-footer">
-                    <a href="https://github.com/vsanchezo/generadorPdfs" class="card-footer-item">Source
-                    Code</a>
-                </footer>
-                </div>
-                
-            </div>
-            </div>
-        </div>
         </div>
     </section>
 
-
-
-    <!-- Portfolio mechatronics -->
-    <section class="section">
+    <!-- Portfolio -->
+    <section class="section" id="projects">
         <div class="container">
-        <div class="section-heading">
-            <h3 class="title is-2">Mechanical Design Portfolio</h3>
-            <h4 class="subtitle is-5">Some of my work</h4>
-            <h4 class="subtitle is-6">Incomplete list... I can only publish these designs because I have been authorized to do so. Most of my work belongs to the enterprises I worked for.</h4>
-        </div>
-        <br>
+            <div class="section-heading">
+                <h3 class="title is-2">Personal projects</h3>
+                <h4 class="subtitle is-5">Always learning</h4>
+            </div>
+            <br>
 
-        <div class="container portfolio-container">
-            <div class="columns">
-                <div class="column">
-                    <!-- Design 1 -->
-                    <div class="card">
-                        <header class="card-header">
-                            <p class="card-header-title">
-                            <span>Mixer </span>
-                            <span class="is-pulled-right">
-                                <span class="tag is-danger">Catia V5</span>
-                            </span>
-                            </p>
-                        </header>
-                        <div class="card-content">
-                            <figure class="image">
-                            <img src="./img/catia.jpeg" alt="catia v5 screenshot">
-                            </figure>
+            <div class="container portfolio-container">
+                <div class="columns">
+                    <div class="column auto">
+
+                        <!-- cards -->
+                        <div class="card">
+                            <header class="card-header">
+                                <p class="card-header-title">
+                                <span>Chat app</span>
+                                <span class="is-pulled-right">
+                                    <span class="tag is-default">v0.7</span>
+                                    <span class="tag is-default">Desktop</span>
+                                    <span class="tag is-danger">Mobile</span>
+                                </span>
+                                </p>
+                            </header>
+                            <div class="card-content">
+                                <figure class="image">
+                                <img src="./img/chat.png" alt="Chat app screenshot">
+                                </figure>
+                            </div>
+                            <footer class="card-footer">
+                                <a href="https://5e7ace18c0fd56e25ff16a25--vladeex-chat.netlify.com/" class="card-footer-item">Preview</a>
+                                <a href="https://github.com/vsanchezo/chat-app" class="card-footer-item">Source
+                                Code</a>
+                            </footer>
                         </div>
-                        <footer class="card-footer">
-                            Model of a mixer machine developed using Delmia Catia V5.
-                        </footer>
-                    </div>
-                    <br>
-                    <!-- design 2 -->
-                    <div class="card">
-                        <header class="card-header">
-                            <p class="card-header-title">
-                            <span>Raw material transportation prototype</span>
-                            <span class="is-pulled-right">
-                                <span class="tag is-danger">AutoCAD 3D</span>
-                            </span>
-                            </p>
-                        </header>
-                        <div class="card-content">
-                            <figure class="image">
-                            <img src="./img/material.jpg" alt="Prototipo Z screenshot">
-                            </figure>
+
+                        <!-- Youtube clone -->
+                        <div class="card">
+                            <header class="card-header">
+                                <p class="card-header-title">
+                                <span>Youtube clone</span>
+                                <span class="is-pulled-right">
+                                    <span class="tag is-default">v0.0.1</span>
+                                    <span class="tag is-default">Desktop</span>
+                                    <span class="tag is-danger">Mobile</span>
+                                </span>
+                                </p>
+                            </header>
+                            <div class="card-content">
+                                <figure class="image">
+                                <img src="./img/youtube.png" alt="Youtube clone screenshot">
+                                </figure>
+                            </div>
+                            <footer class="card-footer">
+                                <a href="https://github.com/vsanchezo/chat-app" class="card-footer-item">Source
+                                Code</a>
+                            </footer>
                         </div>
-                        <footer class="card-footer">
-                            <p>
-                                This prototype was developed using AutoCAD 3D only as part of my intership at Bosch. A catia version was developed also.
-                            </p>
-                        </footer>
                     </div>
-                </div>
-                
 
 
-                <div class="column">
-                    <!-- Prototipo Y -->
-                    <div class="card">
-                    <header class="card-header">
-                        <p class="card-header-title">
-                        <span>Scrap transportation prototype</span>
-                        <span class="is-pulled-right">
-                            <span class="tag is-danger">AutoCAD 3D</span>
-                        </span>
-                        </p>
-                    </header>
-                    <div class="card-content">
-                        <figure class="image">
-                        <img src="./img/scrap.jpg" alt="Prototipo scrap screenshot">
-                        </figure>
-                    </div>
-                    <footer class="card-footer">
-                        <p>
-                            This prototype was developed using AutoCAD 3D only as part of my intership at Bosch. A catia version was developed also.
-                        </p>
-                    </footer>
+                    <div class="column auto">
+
+                        <!-- Python electron app -->
+                        <div class="card">
+                            <header class="card-header">
+                                <p class="card-header-title">
+                                <span>Python-electron app</span>
+                                <span class="is-pulled-right">
+                                    <span class="tag is-default">v0.0.2</span>
+                                    <span class="tag is-default">Desktop</span>
+                                </span>
+                                </p>
+                            </header>
+                            <div class="card-content">
+                                <figure class="image">
+                                <img src="img/electron.png" alt="Electron screenshot">
+                                </figure>
+                            </div>
+                            <footer class="card-footer">
+                                <a href="https://github.com/vsanchezo/python-electron" class="card-footer-item">Source
+                                Code</a>
+                            </footer>
+                        </div>
+                        <!-- PDF generator -->
+                        <div class="card">
+                            <header class="card-header">
+                                <p class="card-header-title">
+                                <span>PDF generator</span>
+                                <span class="is-pulled-right">
+                                    <span class="tag is-default">Desktop</span>
+                                    <span class="tag is-default">Mobile</span>
+                                </span>
+                                </p>
+                            </header>
+                            <div class="card-content">
+                                <figure class="image">
+                                <img src="./img/pdf.jpg" alt="PDF generator screenshot">
+                                </figure>
+                            </div>
+                            <footer class="card-footer">
+                                <a href="https://github.com/vsanchezo/generadorPdfs" class="card-footer-item">Source
+                                Code</a>
+                            </footer>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        </div>
     </section>
-
 
 
   <!-- Achievement Level -->
@@ -627,52 +460,52 @@
     <!-- Contact -->
     <section class="section" id="contact">
         <div class="container">
-        <div class="section-heading">
-            <h3 class="title is-2">Contact</h3>
-            <h4 class="subtitle is-5">Get in touch</h4>
-        </div>
-        <br>
+            <div class="section-heading">
+                <h3 class="title is-2">Contact</h3>
+                <h4 class="subtitle is-5">Get in touch</h4>
+            </div>
+            <br>
 
-        <form action="https://formspree.io/xleweeqo" method="POST">
-            <div class="columns">
-                <div class="column is-6 is-offset-3">
-                    <div class="box">
-                        <div class="field">
-                            <label class="label">Name</label>
-                            <div class="control">
-                                <input class="input" type="text" placeholder="Enter your name" name="nombre" required>
+            <form action="https://formspree.io/xleweeqo" method="POST">
+                <div class="columns">
+                    <div class="column is-6 is-offset-3">
+                        <div class="box">
+                            <div class="field">
+                                <label class="label">Name</label>
+                                <div class="control">
+                                    <input class="input" type="text" placeholder="Enter your name" name="nombre" required>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="field">
-                            <label class="label">Email</label>
-                            <div class="control has-icons-left">
-                                <input class="input" type="email" placeholder="Enter yoru email" value="" name="responderA" required>
-                                <span class="icon is-small is-left">
-                                <i class="fas fa-envelope"></i>
-                                </span>
+                            <div class="field">
+                                <label class="label">Email</label>
+                                <div class="control has-icons-left">
+                                    <input class="input" type="email" placeholder="Enter yoru email" value="" name="responderA" required>
+                                    <span class="icon is-small is-left">
+                                    <i class="fas fa-envelope"></i>
+                                    </span>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="field">
-                        <label class="label">Message</label>
-                        <div class="control">
-                            <textarea class="textarea" placeholder="Write your message" name="mensaje" required></textarea>
-                        </div>
-                        </div>
+                            <div class="field">
+                            <label class="label">Message</label>
+                                <div class="control">
+                                    <textarea class="textarea" placeholder="Write your message" name="mensaje" required></textarea>
+                                </div>
+                            </div>
 
-                        <div class="field is-grouped has-text-centered">
-                        <div class="control">
-                            <button type="submit" class="button is-link is-large"><span class="icon">
-                                <i class="fas fa-envelope"></i>
-                            </span>
-                            <span>Submit</span></button>
-                        </div>
+                            <div class="field is-grouped has-text-centered">
+                                <div class="control">
+                                    <button type="submit" class="button is-link is-large"><span class="icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </span>
+                                    <span>Submit</span></button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </form>
+            </form>
         </div>
     </section>
 
@@ -680,7 +513,7 @@
         <div class="columns is-8">
 
             <div class="column has-text-white-ter">
-                <p class="notification is-link">
+                <p class="notification is-link has-text-centered">
                     <span class="icon">
                         <i class="fas fa-mobile-alt"></i>
                     </span>
@@ -689,21 +522,21 @@
                 
             </div>
             <div class="column has-text-white-ter">
-                <p class="notification is-link">
+                <p class="notification is-link has-text-centered">
                     <span class="icon">
                         <i class="fas fa-at"></i>
                     </span>
-                    <span>vsanchezo@protonmail.com</span>
+                    <a href="mailto:vsanchezo@protonmail.com">vsanchezo@protonmail.com</a>
                 </p>
                 
             </div>
             <div class="column has-text-white-ter">
-                <p class="notification is-link">
+                <p class="notification is-link has-text-centered">
                     <span class="icon">
                         <i class="fas fa-globe-americas"></i>
                     </span>
                     <span>
-                            <a href="https://github.com/vsanchezo?tab=repositories" >Github</a> | 
+                            <a href="https://github.com/vsanchezo?tab=repositories">Github</a> | 
                             <a href="https://www.linkedin.com/in/vsanchezo/" >LinkedIn</a>
                     </span>
                     
@@ -716,8 +549,8 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="section-heading">
-        <p>
-            <strong>Portfolio created using Bulma framework</strong> by <a href="https://github.com/vsanchezo?tab=repositories">Vladimir Sánchez Ocampo</a>. The
+        <p class="subtitle is-6 has-text-centered">
+            <strong>Portfolio "minimal night" created using Bulma framework</strong> by <a href="https://github.com/vsanchezo?tab=repositories">Vladimir Sánchez Ocampo</a>. The
             source code is licensed
             <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
         </p>
